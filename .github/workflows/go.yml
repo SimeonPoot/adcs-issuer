@@ -52,6 +52,6 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./bin/kubectl-tmplt-${{ steps.get_version.outputs.VERSION }}-linux-amd64
-        asset_name: kubectl-tmplt-${{ steps.get_version.outputs.VERSION }}-linux-amd64
+        asset_path: ./bin/adcs-issuer-${{ steps.get_version.outputs.VERSION }}-linux-amd64
+        asset_name: adcs-issuer-${{ steps.get_version.outputs.VERSION }}-linux-amd64
         asset_content_type: application/octet-stream
